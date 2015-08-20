@@ -24,6 +24,7 @@ public class FormatIntegerTest {
 		assertEquals("01",FormatInteger.format(1,2));
 		assertEquals("00999",FormatInteger.format(999,5));
 	}
+	
 	@Test
 	public void maxIntWithoutWidthShouldReturnNoLeadingZeros() {
 		// Arrange

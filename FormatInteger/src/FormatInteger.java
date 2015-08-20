@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-// Exercise 6.37
+// Exercise 6.37 i Liang
 public class FormatInteger {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);

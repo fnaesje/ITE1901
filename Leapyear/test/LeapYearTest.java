@@ -1,4 +1,7 @@
 import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.matchers.JUnitMatchers.*;
+import org.junit.*;
 
 import org.junit.Test;
 
@@ -21,6 +24,7 @@ public class LeapYearTest {
 	
 	@Test
 	public void dividableWith4ShouldBeLeapyear() {
-		assertTrue(LeapYear.isLeapyear(2016));
+		// assertTrue(LeapYear.isLeapyear(2016));
+		assertThat(LeapYear.isLeapyear(2016), is(true));
 	}
 }

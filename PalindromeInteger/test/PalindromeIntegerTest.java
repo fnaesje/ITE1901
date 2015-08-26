@@ -1,10 +1,13 @@
 import static org.junit.Assert.*;
 
-import org.junit.Test;
+import org.junit.*;
+import org.junit.experimental.categories.Category;
+
 
 public class PalindromeIntegerTest {
 
 	@Test
+	@Category(GoodTestsCategory.class)
 	public void aSingleIntegerShouldBePalindrome() {
 		assertTrue(PalindromeInteger.isPalindrome(1));
 	}
@@ -15,11 +18,13 @@ public class PalindromeIntegerTest {
 	}
 	
 	@Test
+	@Category(GoodTestsCategory.class)
 	public void sameNumberRepeatedShouldBePalindrome() {
 		assertTrue(PalindromeInteger.isPalindrome(99999));
 	}
 	
 	@Test
+	@Category(GoodTestsCategory.class)
 	public void legalPalindromeShouldReturnTrue() {
 		assertTrue(PalindromeInteger.isPalindrome(12321));
 	}

@@ -1,3 +1,4 @@
+// Exercise 6.18 i Liang
 public class Password {
 		
 	static private boolean checkLength(String theWord) {
